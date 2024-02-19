@@ -184,6 +184,12 @@ h6 {
   object-fit: contain;
 }
 
+.about-us-img {
+  height: 732px !important;
+  width: 100% !important;
+  object-fit: contain !important;
+}
+
 /* Preloader */
 
 .handle-preloader {

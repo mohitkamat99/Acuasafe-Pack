@@ -24,8 +24,11 @@ $message = isset($_POST['message']) ? preg_replace("/(From:|To:|BCC:|CC:|Subject
 if ($userName && $senderEmail && $userPhone && $userSubject && $message) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $userName . "";
-  $msgBody = " Name: " . $userName . " Email: " . $senderEmail . " Phone: " . $userPhone . " Subject: " . $userSubject . " Message: " . $message . "";
+  // $msgBody = " Name: " . $userName . " Email: " . $senderEmail . " Phone: " . $userPhone . " Subject: " . $userSubject . " Message: " . $message . "";
   // $success = mail($recipient, $headers, $msgBody);
+
+  //make a msg body with proper format 
+  $msgBody = " Name: " . $userName . "\n Email: " . $senderEmail . "\n Phone: " . $userPhone . "\n Subject: " . $userSubject . "\n Message: " . $message . "";
 
   //Create an instance; passing `true` enables exceptions
   try {
@@ -45,7 +48,8 @@ if ($userName && $senderEmail && $userPhone && $userSubject && $message) {
     $mail->Subject = $userSubject;
     $mail->Body = $msgBody;
     $mail->send();
-    echo 'Message has been sent';
+    // echo 'Message has been sent';
+
     header('Location: contact.html?message=Successfull');
   } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
