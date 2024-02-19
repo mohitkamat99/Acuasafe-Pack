@@ -42,7 +42,7 @@ if ($userName && $senderEmail && $userPhone && $userSubject && $message) {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port = 465;                                    //TCP port to connect to
     $mail->setFrom("mohitkamat0110@gmail.com", "Mohit Kamat");
-    $mail->addAddress('mohitkamat99@gmail.com', $userName);     //Add a recipient
+    $mail->addAddress(RECIPIENT_EMAIL, $userName);     //Add a recipient
     $mail->addReplyTo(RECIPIENT_EMAIL, RECIPIENT_NAME);
     $mail->isHTML(false);                                //Set email format to HTML
     $mail->Subject = $userSubject;
