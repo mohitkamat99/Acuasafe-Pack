@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define("RECIPIENT_NAME", "John Doe");
-define("RECIPIENT_EMAIL", "mohitkamat99@gmail.com");
+define("RECIPIENT_NAME", "Amey Sawant");
+define("RECIPIENT_EMAIL", "ameysawant@walbrue.com");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
@@ -42,7 +42,7 @@ if ($userName && $senderEmail && $userPhone && $userSubject && $message) {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port = 465;                                    //TCP port to connect to
     $mail->setFrom("mohitkamat0110@gmail.com", "Mohit Kamat");
-    $mail->addAddress(RECIPIENT_EMAIL, $userName);     //Add a recipient
+    $mail->addAddress('mohitkamat99@gmail.com', $userName);     //Add a recipient
     $mail->addReplyTo(RECIPIENT_EMAIL, RECIPIENT_NAME);
     $mail->isHTML(false);                                //Set email format to HTML
     $mail->Subject = $userSubject;
@@ -63,5 +63,4 @@ if ($userName && $senderEmail && $userPhone && $userSubject && $message) {
   //Set Location After Unsuccesssfull Submission
   header('Location: contact.html?message=Failed');
 }
-
 ?>

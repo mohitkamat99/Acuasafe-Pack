@@ -83,6 +83,11 @@ body {
   }
 }
 
+.nav-logo {
+  max-width: 40% !important;
+  margin-top: -0.2rem !important;
+}
+
 .large-container {
   max-width: 1450px;
   padding: 0px 15px;
@@ -609,6 +614,11 @@ img {
   width: 100%;
 }
 
+.header-lower {
+  margin-bottom: -1rem;
+  margin-top: -1.5rem;
+}
+
 .main-header .outer-box {
   position: relative;
   display: flex;
@@ -782,6 +792,7 @@ img {
 
 .main-menu {
   float: left;
+  margin-left: 730px;
 }
 
 .main-menu .navbar-collapse {
@@ -817,7 +828,7 @@ img {
   position: relative;
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   padding: 42px 0px;
   font-family: "Open Sans", sans-serif;
@@ -2683,6 +2694,7 @@ div#mCSB_1_container {
 .main-footer {
   position: relative;
   background-color: #001a56;
+  background-repeat: no-repeat;
 }
 
 .main-footer .pattern-layer .pattern-3 {
@@ -2746,7 +2758,7 @@ div#mCSB_1_container {
 .main-footer .widget-section {
   position: relative;
   width: 100%;
-  padding: 90px 0px 80px 0px;
+  /* padding: 90px 0px 80px 0px; */
 }
 
 .main-footer .logo-widget {
@@ -2767,6 +2779,11 @@ div#mCSB_1_container {
 
 .main-footer .logo-widget .text p {
   color: #fff;
+}
+
+.img-fluid {
+  max-width: 75% !important;
+  height: auto;
 }
 
 .main-footer .logo-widget .schedule-box h6 {
