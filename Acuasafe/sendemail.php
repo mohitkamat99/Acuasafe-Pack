@@ -37,12 +37,12 @@ if ($userName && $senderEmail && $userPhone && $userSubject && $message) {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-    $mail->Username = 'mohitkamat0110@gmail.com';                     //SMTP username
-    $mail->Password = 'neig qxoz pejx jyue';                               //SMTP password
+    $mail->Username = 'walbrue.breweries@gmail.com';                     //SMTP username
+    $mail->Password = 'exxv alge kegi syau';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port = 465;                                    //TCP port to connect to
-    $mail->setFrom("mohitkamat0110@gmail.com", "Mohit Kamat");
-    $mail->addAddress('mohitkamat99@gmail.com', $userName);     //Add a recipient
+    $mail->setFrom("walbrue.breweries@gmail.com", "Walbrue Breweries");
+    $mail->addAddress(RECIPIENT_EMAIL, RECIPIENT_NAME);     //Add a recipient
     $mail->addReplyTo(RECIPIENT_EMAIL, RECIPIENT_NAME);
     $mail->isHTML(false);                                //Set email format to HTML
     $mail->Subject = $userSubject;
