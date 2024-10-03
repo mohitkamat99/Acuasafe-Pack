@@ -42,14 +42,26 @@
 
 
         <!-- preloader -->
-            <div class="loader-wrap">
+        <div class="loader-wrap">
             <div class="preloader">
                 <!-- <div class="preloader-close">Preloader Close</div> -->
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
-                        <div class="spinner"></div>
+                        <!-- <div class="spinner"> </div> -->
+                            <div class="logo-box" style="margin-left:300px;">
+                            <figure class="logo">
+                            <a href="index.html">
+                            <img
+                                width="500px"
+                                height="500px"
+                                class="nav-logo"
+                                src="assets/images/loader-image.png"
+                                alt=""
+                            /></a>
+                            </figure>
+                        </div>
                         <div class="txt-loading">
-                            <span data-text-preloader="w" class="letters-loading">
+                            <span data-text-preloader="w" class="letters-loading" >
                                 w
                             </span>
                             <span data-text-preloader="a" class="letters-loading">
@@ -139,7 +151,12 @@
                                                 </ul>
                                             </li>  -->
         
-                                    <li><a href="shop.html">Products</a></li>
+                                            <li class="dropdown"><a href="shop.html">Products</a>
+                                                <ul>
+                                                    <li><a href="about.html">IMFL</a></li>
+                                                    <li><a href="about.html">Carbonated Soft Drinks</a></li>
+                                                </ul>
+                                            </li>
                                     <!-- <li class="dropdown"><a href="index.html">Elements</a>
                                                 <div class="megamenu">
                                                     <div class="row clearfix">
@@ -282,11 +299,11 @@
 
 
         <!-- Page Title -->
-        <section class="page-title centred" style="background-image: url(assets/images/banner/page-title.jpg);">
+        <section class="page-title centred">
             <div class="shape" style="background-image: url(assets/images/shape/banner-shap.png);"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h1>Contact Us</h1>
+                    <h1 style="color: white;">Contact Us</h1>
                     <ul class="bread-crumb clearfix">
                         <li><a href="index.html">Home</a></li>
                         <li>Contact Us</li>

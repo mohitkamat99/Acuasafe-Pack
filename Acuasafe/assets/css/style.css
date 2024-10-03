@@ -103,6 +103,7 @@ body {
   max-width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
+  color: white;
 }
 
 .small-container {
@@ -252,6 +253,17 @@ h6 {
 }
 
 .handle-preloader .animation-preloader .txt-loading .letters-loading {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  letter-spacing: 15px;
+  display: inline-block;
+  position: relative;
+  font-size: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.handle-preloader .animation-preloader .txt-loading-caption .letters-loading-caption {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   letter-spacing: 15px;
@@ -853,7 +865,7 @@ img {
   content: "\f107";
   font-family: "Font Awesome 5 Pro";
   top: 44px;
-  right: 0px;
+  right: -3px;
   transition: all 500ms ease;
 }
 
@@ -1413,7 +1425,7 @@ div#mCSB_1_container {
 .banner-section {
   position: relative;
   overflow: hidden;
-  background-color: #002c8f;
+  background-color: #f34f01;
 }
 
 .banner-section .shape {
@@ -1594,7 +1606,7 @@ div#mCSB_1_container {
 
 .banner-carousel .inner-box .image-box .image-1 {
   position: absolute;
-  right: 85px;
+  right: -50px;
   bottom: 86px;
   opacity: 0;
   -webkit-transform: translateY(100px);
@@ -1602,29 +1614,45 @@ div#mCSB_1_container {
   -ms-transform: translateY(100px);
   -o-transform: translateY(100px);
   transform: translateY(100px);
-  -webkit-transition: all 1000ms ease;
-  -moz-transition: all 1000ms ease;
-  -ms-transition: all 1000ms ease;
-  -o-transition: all 1000ms ease;
-  transition: all 1000ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .banner-carousel .inner-box .image-box .image-2 {
   position: absolute;
-  right: -220px;
-  bottom: 0px;
+  right: -50px;
+  bottom: 86px;
   opacity: 0;
-  z-index: -1;
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
   -ms-transform: translateY(100px);
   -o-transform: translateY(100px);
   transform: translateY(100px);
-  -webkit-transition: all 1000ms ease;
-  -moz-transition: all 1000ms ease;
-  -ms-transition: all 1000ms ease;
-  -o-transition: all 1000ms ease;
-  transition: all 1000ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.banner-carousel .inner-box .image-box .image-3 {
+  position: absolute;
+  right: -50px;
+  bottom: 86px;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .banner-carousel .active .inner-box .image-box .image-1 {
@@ -1642,6 +1670,20 @@ div#mCSB_1_container {
 }
 
 .banner-carousel .active .inner-box .image-box .image-2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1000ms;
+  -moz-transition-delay: 1000ms;
+  -ms-transition-delay: 1000ms;
+  -o-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+
+.banner-carousel .active .inner-box .image-box .image-3 {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -2693,7 +2735,7 @@ div#mCSB_1_container {
 
 .main-footer {
   position: relative;
-  background-color: #001a56;
+  background-color: #f34f01;
   background-repeat: no-repeat;
 }
 
@@ -2956,7 +2998,7 @@ div#mCSB_1_container {
 .footer-bottom {
   position: relative;
   width: 100%;
-  background-color: #001442;
+  background-color: #f34f01;
   padding: 20px 0px;
 }
 
@@ -4301,6 +4343,7 @@ div#mCSB_1_container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #f34f01;
 }
 
 .page-title .shape {
