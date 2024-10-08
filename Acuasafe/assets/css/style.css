@@ -364,6 +364,18 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
+  .handle-preloader .animation-preloader .logo-box img {
+    /* center the image */
+    margin: 0 auto;
+    margin-left: -70px !important;
+    max-width: 40% !important;
+  }
+
+  .handle-preloader .animation-preloader .txt-loading .letters-loading {
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+  
   .handle-preloader .animation-preloader .spinner {
     height: 8em;
     width: 8em;
@@ -374,8 +386,16 @@ h6 {
     height: 7em;
     width: 7em;
   }
+
+  .handle-preloader .animation-preloader .logo-box img {
+    /* center the image */
+    margin: 0 auto;
+    margin-left: -110px !important;
+   
+  }
+
   .handle-preloader .animation-preloader .txt-loading .letters-loading {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 10px;
   }
 }
@@ -1596,6 +1616,11 @@ div#mCSB_1_container {
   width: 100%;
 }
 
+.banner-carousel .inner-box .mobile-images {
+  display: none;
+  /* margin-top: -25%; */
+}
+
 .banner-carousel .inner-box .image-box {
   position: absolute;
   right: 0px;
@@ -1608,6 +1633,23 @@ div#mCSB_1_container {
   position: absolute;
   right: -50px;
   bottom: 86px;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.banner-carousel .inner-box .mobile-images .mimage-1 {
+  position: relative;
+  top: -200px;
+  left: 200px;
   opacity: 0;
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
@@ -1656,6 +1698,20 @@ div#mCSB_1_container {
 }
 
 .banner-carousel .active .inner-box .image-box .image-1 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1000ms;
+  -moz-transition-delay: 1000ms;
+  -ms-transition-delay: 1000ms;
+  -o-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+
+.banner-carousel .active .inner-box .mobile-images .mimage-1 {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);

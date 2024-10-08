@@ -131,6 +131,11 @@
     display: none;
   }
 
+  .banner-carousel .inner-box .mobile-images, .banner-carousel .owl-nav{
+    display: block;
+    /* margin-bottom: -25%; */
+  }
+
   .banner-carousel .content-box {
     max-width: 100%;
   }
@@ -405,6 +410,11 @@
 
   .banner-carousel .content-box {
     padding: 180px 0px 200px 0px;
+  }
+
+  .banner-carousel .inner-box .mobile-images {
+    position: relative;
+    right: 100px;
   }
 
   .feature-block-one .inner-box .shape {
