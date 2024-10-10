@@ -5,7 +5,7 @@
 }
 
 .handle-preloader {
-  background-color: #f34f01;
+  background-color: #dadada;
 }
 
 .preloader-close {
@@ -422,4 +422,21 @@
 
 .contact-style-two .info-list li p a:hover {
   color: #00d1f9;
+}
+
+.bg-orange {
+  background-color: #f34f01 !important;
+}
+
+.blue-text {
+  color:#061a3a !important;
+  font-weight: 600;
+}
+
+.bg-grey {
+  background-color: #dadada !important;
+}
+
+.orange-text {
+  color: #f34f01 !important;
 }

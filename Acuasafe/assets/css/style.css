@@ -330,11 +330,11 @@ h6 {
 }
 
 .handle-preloader .animation-preloader .txt-loading .letters-loading {
-  color: #ffffff;
+  color: #006635 ;
 }
 
 .handle-preloader .animation-preloader .txt-loading .letters-loading:before {
-  color: #ffffff;
+  color: #006635 ;
 }
 
 .handle-preloader .animation-preloader .spinner {
@@ -2102,6 +2102,7 @@ div#mCSB_1_container {
   margin-right: -140px;
   top: 180px;
   z-index: 1;
+  top: 0px;
 }
 
 .chooseus-section .image-box .image {
@@ -7529,4 +7530,8 @@ div#mCSB_1_container {
 
 .shop-details .product-discription .tabs-content .customer-comments {
   padding-left: 0px;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
 }
